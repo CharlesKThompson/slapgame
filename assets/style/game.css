@@ -1,0 +1,21 @@
+* {
+    outline: 1px solid blue;
+}
+
+body {
+    text-align: center;
+    justify-content: space-around;
+    background: grey;
+}
+
+.characters {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+footer {
+    
+}

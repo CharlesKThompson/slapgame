@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Slapgame</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/game.css">
 </head>
+
 <body>
-  <img src="placehold.it/200x200" alt="placeholder">
-    
+    <div class="Players">
+        <span>Gharnef:</span>
+        <span>Health:
+            <span id="health">--</span>
+        </span>
+        <span>Hits:
+            <span id="hits">--</span>
+        </span>
+        <div class="characters">
+            <div class="container-fluid">
+                <div class="row justify-content-space-around align-items-center">
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="https://pm1.narvii.com/6524/a4f5f66a6e092fc06ef56693a1ed2435cbeb337a_hq.jpg" alt="villain">
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="http://static.tvtropes.org/pmwiki/pub/images/full_portrait_chrom.png" alt="hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <button class="btn btn-warning" onclick="sword(0)">Sword</button>
+        <button class="btn btn-primary" onclick="lance(0)">Lance</button>
+        <button class="btn btn-danger" onclick="axe(0)">Axe</button>
+    </footer>
 
 
-
-
-<script src="assets/game.js"></script>    
+    <script src="assets/game.js"></script>
 </body>
+
+
 </html>
