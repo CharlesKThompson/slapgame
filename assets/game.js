@@ -28,31 +28,18 @@ draw()
 
 function sword(i) {
     players[i].health -= 2
+    players[i].hits++
     draw(players)
 }
 
 function axe(i) {
     players[i].health -= 5
+    players[i].hits++
     draw(players)
 }
 
 function lance(i) {
     players[i].health -= 3
+    players[i].hits++
     draw(players)
 }
-
-function countHits() 
-    
- {
-    if (players[0].health -= 2) {
-        players[0].hits++
-    }
-    else if (players[0].health -= 3) {
-        players[0].hits++
-    }
-    else if (players[0].health -= 5) {
-        players[0].hits++
-    }
-
-}
-countHits()
