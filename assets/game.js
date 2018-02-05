@@ -54,10 +54,12 @@ var Item = function (name, properties, description){
 
 var items = {
     shield:new Item("Shield",0.3,"This is an awesome shield!"),
-    potion:new Item("Potion",15,"restorative panacea"),
+    potion:new Item("Gauntlet",15,"restorative panacea"),
     banner:new Item("Banner",3.2,"Rally to the cause!")
 }
 
 function giveShield(){
     players[i].items.push(items.shield)
 }
+
+
