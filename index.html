@@ -14,9 +14,9 @@
 <body>
     <div class="Players">
         <span>Vignette:</span>
-        <span>Health:
-            <span id="health">--</span>
-        </span>
+        <h3>Health:
+            <span id="health">...</span>
+        </h3>
         <span>Hits:
             <span id="hits">--</span>
         </span>
@@ -24,7 +24,8 @@
             <div class="container-fluid">
                 <div class="row justify-content-space-around align-items-center">
                     <div class="col-sm-4">
-                        <img class="img-fluid" src="https://vignette.wikia.nocookie.net/fireemblem/images/1/10/Validar.png/revision/latest?cb=20160718010614" alt="villain">
+                        <img class="img-fluid" src="https://vignette.wikia.nocookie.net/fireemblem/images/1/10/Validar.png/revision/latest?cb=20160718010614"
+                            alt="villain">
                     </div>
                     <div class="col-sm-4">
 
@@ -38,18 +39,28 @@
     </div>
 
     <footer>
-        <div class="attackButtons">
-            <button class="btn btn-warning" onclick="sword(0)">Sword</button>
-            <button class="btn btn-primary" onclick="lance(0)">Lance</button>
-            <button class="btn btn-danger" onclick="axe(0)">Axe</button>
+        <div class="row">
+
+            <div class="attackButtons col-sm-4">
+                <button class="btn btn-warning" onclick="app.controllers.gameController.attack('sword')">Sword</button>
+                <button class="btn btn-primary" onclick="app.controllers.gameController.attack('lance')">Lance</button>
+                <button class="btn btn-danger" onclick="app.controllers.gameController.attack('axe')">Axe</button>
+            </div>
+            <span class= "col-sm-4"></span>
+            <div class="modButtons col-sm-4">
+                <button class="btn btn-info" onclick="app.controllers.gameController.giveItem('shield')">Shield</button>
+                <button class="btn btn-success" onclick="app.controllers.gameController.giveItem('gauntlet')">Gauntlet</button>
+                <button class="btn btn-secondary" onclick="app.controllers.gameController.giveItem('shield')">Banner</button>
+            </div>
         </div>
-        <div class="modButtons">
-            <button class="btn btn-warning" onclick="giveShield(0)">Shield</button>
-            <button class="btn btn-primary" onclick="giveGauntlet(0)">Gauntlet</button>
-            <button class="btn btn-danger" onclick="giveBanner(0)">Banner</button>
+            <div class="reset">
+            <button class="btn btn-light" onclick="app.controllers.gameController.reset()">Reset</button>
         </div>
     </footer>
 
+    <script src="assets/game-service.js"></script>
+
+    <script src="assets/game-controller.js"></script>
 
     <script src="assets/game.js"></script>
 </body>
