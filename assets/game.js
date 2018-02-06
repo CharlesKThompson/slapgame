@@ -64,41 +64,46 @@ var items = {
     banner: new Item("banner", 2.0, "Rally to the cause!")
 }
 
-// function giveItems() {
-//     players[i].items.push(shield, gauntlet, banner)
-// }
-function giveShield(){
+function giveShield() {
     var item = items.shield
-    var player=players[0]
+    var player = players[0]
     player.items.push(item)
 }
 
-function giveGauntlet(){
-    var item= items.gauntlet
-    var player=players[0]
+function giveGauntlet() {
+    var item = items.gauntlet
+    var player = players[0]
     player.items.push(item)
 }
 
-function giveBanner(){
+function giveBanner() {
     var item = items.banner
-    var player=players[0]
+    var player = players[0]
     player.items.push(item)
 }
+
+
 function addMods() {
     var modTotal = 0
+    var item = players.items[i]
 
-    for (let i = 0; i < players.length; i++) {
+    for (let i = 0; i < item.length; i++) {
         modTotal += players.items[i].properties;
-        return modTotal
-
+        var sword = sword()
+        var lance = lance()
+        var axe = axe()
+        if (sword) {
+            return modTotal * (-2)
+        } else if
+            (lance) {
+            return modTotal * (-4)
+        } else if
+              (axe) {
+            return modTotal * (-6)
+        }
     }
-
-
 }
-//function shield(i) {
-//     players[i].health -= damage *= 0.5
-
-// }
+addMods()
 
 /*
 var pizza = {
